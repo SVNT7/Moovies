@@ -1,0 +1,19 @@
+.tab-selected-line {
+    -fx-background-color: white;
+}
+.headers-region {
+    -fx-background-color: white;
+}
+.tab-header-background {
+    -fx-background-color: white;
+}
+.control-buttons-tab{
+    -fx-background-color:white;
+}
+.control-buttons-tab .tab-down-button{
+    -fx-background-color: white;
+}
+.tab-header-area {
+    
+    -fx-padding: 0 0 0 0;
+}
