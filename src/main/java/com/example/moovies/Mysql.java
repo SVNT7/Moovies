@@ -29,7 +29,7 @@ public class Mysql {
 		try {
 			//blok try trzyma w sobie wszystkie potencjalnie niebezpieczne instrukcje
 			//zaladowanie sterownika do mysql
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			//lacze sie do bazy danych
 			connect=DriverManager.getConnection("jdbc:mysql://192.166.219.220/moovies", "moovies", "kDm.2iIez2.");
 			//jdbc:mysql://localhost/firma?user=root&password=
@@ -62,7 +62,7 @@ public class Mysql {
 			String login=resultSet.getString("login");
 			String city=resultSet.getString("password");
 
-			//System.out.println(login);
+			System.out.println(login);
 		}
 	}
 

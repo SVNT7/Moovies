@@ -48,7 +48,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.squareup.okhttp3:okhttp:3.14.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.squareup.retrofit2:converter-moshi:2.7.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.reactfx:reactfx:2.0-M5" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.25" level="project" />
-    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.11.4" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.6" level="project" />
   </component>
 </module>
