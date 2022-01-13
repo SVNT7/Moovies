@@ -18,11 +18,15 @@ public class HelloController {
     private MFXButton zaloguj;
 
     @FXML
-    void printHelloWorld(MouseEvent event) {
+    void printHelloWorld(MouseEvent event) throws Exception {
         event.consume();
+
+        Mysql baza = new Mysql();
+        //baza.readDataBase();
 
         String loginTxt = login.getText();
         System.out.println(loginTxt);
+
     }
 
 }

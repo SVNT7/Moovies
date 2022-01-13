@@ -43,9 +43,9 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moovies.HelloController">
+<VBox prefHeight="400.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moovies.Mysql">
    <children>
-      <AnchorPane prefHeight="401.0" prefWidth="631.0" style="-fx-background-color: linear-gradient(to right, #c9d6ff, #e2e2e2);">
+      <AnchorPane fx:id="anchorX" prefHeight="401.0" prefWidth="631.0" style="-fx-background-color: linear-gradient(to right, #c9d6ff, #e2e2e2);">
          <children>
             <MFXTextField fx:id="login" layoutX="75.0" layoutY="131.0" lineStrokeWidth="4.0" prefHeight="51.0" prefWidth="246.0" promptText="Login..." style="-fx-font-size: 20;" validated="true" />
             <MFXButton fx:id="zaloguj" layoutX="75.0" layoutY="299.0" onMouseEntered="#printHelloWorld" prefHeight="42.0" prefWidth="256.0" style="-fx-font-size: 20;" text="Zaloguj się">
