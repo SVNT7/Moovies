@@ -33,42 +33,32 @@
 -->
 
 <?import io.github.palexdev.materialfx.controls.MFXLabel?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="568.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="834.0" prefWidth="1287.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moovies.HelloController">
    <children>
-      <AnchorPane prefHeight="577.0" prefWidth="876.0">
+      <AnchorPane prefHeight="791.0" prefWidth="1287.0">
          <children>
-            <AnchorPane layoutY="-8.0" prefHeight="647.0" prefWidth="137.0">
+            <AnchorPane layoutY="-8.0" prefHeight="834.0" prefWidth="150.0">
                <children>
-                  <MFXLabel layoutY="141.0" prefHeight="36.0" prefWidth="145.0" text="Info">
+                  <MFXLabel layoutX="3.0" layoutY="151.0" prefHeight="36.0" prefWidth="145.0" text="Filmy">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </MFXLabel>
-                  <MFXLabel layoutY="192.0" prefHeight="36.0" prefWidth="145.0" text="Filmy">
+                  <MFXLabel layoutX="3.0" layoutY="205.0" prefHeight="36.0" prefWidth="145.0" text="Koszyk">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </MFXLabel>
-                  <MFXLabel layoutY="246.0" prefHeight="36.0" prefWidth="145.0" text="Koszyk">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </MFXLabel>
-                  <MFXLabel layoutY="297.0" prefHeight="36.0" prefWidth="145.0" text="Konto">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </MFXLabel>
-                  <MFXLabel layoutX="2.0" layoutY="615.0" lineStrokeWidth="0.0" prefHeight="36.0" prefWidth="145.0" text="Wyloguj">
+                  <MFXLabel layoutX="3.0" layoutY="256.0" prefHeight="36.0" prefWidth="145.0" text="Konto">
                      <font>
                         <Font size="22.0" />
                      </font>
@@ -78,57 +68,28 @@
                         <Image url="@img/cowhead.png" />
                      </image>
                   </ImageView>
+                  <MFXLabel layoutX="2.0" layoutY="798.0" lineStrokeWidth="0.0" prefHeight="36.0" prefWidth="145.0" text="Wyloguj">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel fx:id="admin" layoutX="2.0" layoutY="751.0" prefHeight="36.0" prefWidth="145.0" text="Admin" visible="false">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </MFXLabel>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="147.0" prefHeight="647.0" prefWidth="726.0">
+            <AnchorPane layoutX="147.0" prefHeight="834.0" prefWidth="1155.0">
                <children>
-                  <TabPane prefHeight="647.0" prefWidth="726.0" stylesheets="@style.css">
-                    <tabs>
-                      <Tab text="Untitled Tab 1">
-                        <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                 <children>
-                                    <TextArea editable="false" prefHeight="591.0" prefWidth="720.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex elit, scelerisque sed tellus nec, mattis suscipit diam. Aenean molestie nisi volutpat, fermentum quam non, blandit libero. Cras consectetur commodo nibh. Nulla ex risus, sodales accumsan ornare vitae, eleifend id arcu. Phasellus lectus enim, suscipit non dapibus vel, commodo ac velit. Curabitur congue lectus erat, sit amet laoreet libero tristique et. Mauris accumsan placerat ante at mollis. Aenean fermentum sollicitudin risus, eu pulvinar dolor aliquam sed. Proin posuere orci nec venenatis volutpat. Sed pulvinar vulputate arcu non laoreet. Sed quis mi tincidunt, dignissim nibh ut, auctor diam. Ut orci lorem, tincidunt a velit semper, iaculis lobortis ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex elit, scelerisque sed tellus nec, mattis suscipit diam. Aenean molestie nisi volutpat, fermentum quam non, blandit libero. Cras consectetur commodo nibh. Nulla ex risus, sodales accumsan ornare vitae, eleifend id arcu. Phasellus lectus enim, suscipit non dapibus vel, commodo ac velit. Curabitur congue lectus erat, sit amet laoreet libero tristique et. Mauris accumsan placerat ante at mollis. Aenean fermentum sollicitudin risus, eu pulvinar dolor aliquam sed. Proin posuere orci nec venenatis volutpat. Sed pulvinar vulputate arcu non laoreet. Sed quis mi tincidunt, dignissim nibh ut, auctor diam. Ut orci lorem, tincidunt a velit semper, iaculis lobortis ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex elit, scelerisque sed tellus nec, mattis suscipit diam. Aenean molestie nisi volutpat, fermentum quam non, blandit libero. Cras consectetur commodo nibh. Nulla ex risus, sodales accumsan ornare vitae, eleifend id arcu. Phasellus lectus enim, suscipit non dapibus vel, commodo ac velit. Curabitur congue lectus erat, sit amet laoreet libero tristique et. Mauris accumsan placerat ante at mollis. Aenean fermentum sollicitudin risus, eu pulvinar dolor aliquam sed. Proin posuere orci nec venenatis volutpat. Sed pulvinar vulputate arcu non laoreet. Sed quis mi tincidunt, dignissim nibh ut, auctor diam. Ut orci lorem, tincidunt a velit semper, iaculis lobortis ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex elit, scelerisque sed tellus nec, mattis suscipit diam. Aenean molestie nisi volutpat, fermentum quam non, blandit libero. Cras consectetur commodo nibh. Nulla ex risus, sodales accumsan ornare vitae, eleifend id arcu. Phasellus lectus enim, suscipit non dapibus vel, commodo ac velit. Curabitur congue lectus erat, sit amet laoreet libero tristique et. Mauris accumsan placerat ante at mollis. Aenean fermentum sollicitudin risus, eu pulvinar dolor aliquam sed. Proin posuere orci nec venenatis volutpat. Sed pulvinar vulputate arcu non laoreet. Sed quis mi tincidunt, dignissim nibh ut, auctor diam. Ut orci lorem, tincidunt a velit semper, iaculis lobortis ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex elit, scelerisque sed tellus nec, mattis suscipit diam. Aenean molestie nisi volutpat, fermentum quam non, blandit libero. Cras consectetur commodo nibh. Nulla ex risus, sodales accumsan ornare vitae, eleifend id arcu. Phasellus lectus enim, suscipit non dapibus vel, commodo ac velit. Curabitur congue lectus erat, sit amet laoreet libero tristique et. Mauris accumsan placerat ante at mollis. Aenean fermentum sollicitudin risus, eu pulvinar dolor aliquam sed. Proin posuere orci nec venenatis volutpat. Sed pulvinar vulputate arcu non laoreet. Sed quis mi tincidunt, dignissim nibh ut, auctor diam. Ut orci lorem, tincidunt a velit semper, iaculis lobortis ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos." wrapText="true">
-                                       <font>
-                                          <Font name="Montserrat Regular" size="12.0" />
-                                       </font>
-                                    </TextArea>
-                                 </children>
-                              </AnchorPane>
-                        </content>
-                      </Tab>
-                      <Tab text="Untitled Tab 2">
-                        <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="266.0" />
-                        </content>
-                      </Tab>
-                        <Tab text="Untitled Tab 2">
-                           <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="266.0" />
-                           </content>
-                        </Tab>
-                        <Tab text="Untitled Tab 2">
-                           <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="266.0" />
-                           </content>
-                        </Tab>
-                        <Tab text="Untitled Tab 2">
-                           <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="266.0" />
-                           </content>
-                        </Tab>
-                        <Tab text="Untitled Tab 2">
-                           <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="266.0" />
-                           </content>
-                        </Tab>
-                        <Tab text="Untitled Tab 2">
-                           <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="266.0" />
-                           </content>
-                        </Tab>
-                    </tabs>
-                  </TabPane>
+                  <TableView fx:id="tabela" onMousePressed="#handle" prefHeight="834.0" prefWidth="1158.0">
+                    <columns>
+                      <TableColumn fx:id="nazwa" prefWidth="263.0" text="Nazwa" />
+                        <TableColumn fx:id="autor" prefWidth="289.0" text="Autor" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="1020.0" mnemonicParsing="false" onMouseReleased="#odswiezFilmy" prefHeight="23.0" prefWidth="138.0" text="Pobierz filmy" />
+                  <Button layoutX="880.0" mnemonicParsing="false" onMouseReleased="#oknoDodajFilm" prefHeight="23.0" prefWidth="138.0" text="Dodaj film" />
                </children>
             </AnchorPane>
          </children>
